@@ -190,6 +190,7 @@ button {
 	box-shadow: -4px 0px var(--card-shadow);
 	display: grid;
 	grid-template-rows: 1fr auto;
+	border-radius: 1vw;
 }
 
 .project-icons {
@@ -224,7 +225,7 @@ button {
 	display: grid;
 	grid-template-rows: repeat(3, 1fr);
 	padding: 2vh 2vw;
-
+	border-radius: 1vw;
 }
 
 .announcement-card {
