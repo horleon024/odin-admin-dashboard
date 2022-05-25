@@ -249,4 +249,33 @@ button {
 
 .trending-container {
 	background-color: white;
+	border-radius: 1vw;
+	padding: 3vh 3vw 3vh 1vw;
+}
+
+.trending-card {
+	display: grid;
+	grid-template-columns: 3vw 1fr;
+	grid-template-rows: 1fr;
+	padding: 2vh 0;
+}
+
+.trending-name {
+	font-weight: 500;
+}
+
+.trending-text  {
+	opacity: 0.6;
+}
+
+.cyan {
+	background-color: cyan;
+}
+
+.gray {
+	background-color: gray;
+}
+
+.pink {
+	background-color: pink;
 }
