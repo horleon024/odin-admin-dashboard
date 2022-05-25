@@ -5,14 +5,20 @@
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.bold {
+	font-weight: 600;
+}
+
 :root {
 	--sidebar-color: rgb(0, 166, 255);
+	--content-color: rgb(223, 241, 240);
+	--content-shadow: rgb(161, 205, 205);
 }
 
 .container {
 	height: 100vh;
 	display: grid;
-	grid-template-columns: 1fr 4fr;
+	grid-template-columns: 1fr 5fr;
 	grid-template-rows: 1fr 4fr;
 }
 
@@ -33,7 +39,9 @@
 	align-items: center;
 	justify-content: center;
 	padding: 10px;
+	padding-left: 2vw;
 	font-weight: 600;
+	font-size: 1.2rem;
 }
 
 .sidebar-icon {
@@ -48,9 +56,10 @@
 	align-items: center;
 	justify-content: center;
 	align-content: center;
-	font-size: 24px;
+	font-size: 1.5rem;
 	font-weight: 600;
-	padding: 5px 10px;
+	padding: 10px;
+	padding-left: 2vw;
 }
 
 .logo {
@@ -65,19 +74,70 @@
 
 .upper-header {
 	display: grid;
-	grid-template-columns: 3fr 2fr;
+	grid-template-columns: 1fr 30vw;
 	grid-template-rows: 1fr;
 	align-items: center;
+	padding-top: 3vh;
+}
+
+.searchbar {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 40px 1fr;
+	align-items: center;
+	justify-items: left;
+	padding-left: 2vw;
+}
+
+input {
+	width: 40vw;
+	border-radius: 16px;
+	background-color: var(--content-color);
+	height: 4vh;
+	border: none;
+}
+
+.profilebar {
+	display: grid;
+	grid-template-columns: 1fr 1fr 2.5fr;
+	grid-template-rows: 1fr;
+	align-items: center;
+}
+
+.circular {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background-color: yellow;
 }
 
 .lower-header {
 	display: grid;
 	grid-template-columns: 3fr 2fr;
 	grid-template-rows: 1fr;
+	align-items: center;
 }
 
 .greeting-container {
-	align-self: center;
+	padding-left: 2vw;
+	display: grid;
+	grid-template-columns: 5vw 1fr;
+	grid-template-rows: 1fr;
+	align-items: center;
+	gap: 1vw;
+}
+
+.greeting-text {
+	font-size: 1.3rem;
+}
+
+.small-greeting {
+	font-size: 0.7rem;
+}
+
+.main-img {
+	width: 60px;
+	height: 60px;
 }
 
 .header-buttons {
@@ -85,12 +145,24 @@
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: 1fr;
 	align-items: center;
-	gap: 20px;
+	gap: 1vw;
+	padding-right: 3vw;
+}
+
+button {
+	font-size: 1.2rem;
+	border-radius: 2vw;
+	background-color: var(--sidebar-color);
+	color: white;
+	border: none;
+	width: 7vw;
+	height: 5vh;
+	font-weight: 600;
 }
 
 .content {
-	background-color: rgb(242, 231, 231);
-	box-shadow: 0px -3px rgb(205, 196, 196);
+	background-color: var(--content-color);
+	box-shadow: 0px -3px var(--content-shadow);
 	display: grid;
 	grid-template-columns: 3fr 1fr;
 	grid-template-rows: 1fr repeat(2, 4fr);
