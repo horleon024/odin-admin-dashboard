@@ -15,14 +15,68 @@
 .sidebar {
 	background-color: rgb(81, 141, 161);
 	grid-row: 1 / 3;
-
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 3fr 5fr;
+	gap: 10px;
 }
 
 .header {
+	display: grid;
+	grid-template-rows: 1fr 2fr;
+	grid-template-columns: 1fr;
+}
 
+.upper-header {
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	grid-template-rows: 1fr;
+	align-items: center;
+}
+
+.lower-header {
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	grid-template-rows: 1fr;
+}
+
+.greeting-container {
+	align-self: center;
+}
+
+.header-buttons {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr;
+	align-items: center;
+	gap: 20px;
 }
 
 .content {
 	background-color: rgb(242, 231, 231);
 	box-shadow: 0px -3px rgb(205, 196, 196);
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-template-rows: 1fr repeat(2, 4fr);
+}
+
+.projects-container {
+	grid-row: 2 / 4;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	gap: 10px;
+}
+
+.project-card {
+	background-color: white;
+}
+
+.announcements-container {
+	background-color: white;
+
+}
+
+.trending-container {
+	background-color: white;
 }
